@@ -1,4 +1,4 @@
-package solution.question1;
+package solution.question1_And_2;
 
 public class Meal {
 	private String name;
@@ -9,16 +9,8 @@ public class Meal {
 	//reference to the next node in the chain
 	Meal next;
 
-
-	private void add(){}
-
-	private void remove(){}
-
-	private void find(){}
-
-
-	public Meal(String name, Double proteinContentInMiligram, Double carbonHydrateContentInMiligram,
-			Double fatContentInMiligram) {
+	public Meal(String name, double proteinContentInMiligram, double carbonHydrateContentInMiligram,
+			double fatContentInMiligram) {
 		next = null;
 		this.name = name;
 		this.proteinContentInMiligram = proteinContentInMiligram;
@@ -26,14 +18,14 @@ public class Meal {
 		this.fatContentInMiligram = fatContentInMiligram;
 	}
 
-	public Meal(String name, Double proteinContentInMiligram, Double carbonHydrateContentInMiligram,
+/*	public Meal(String name, Double proteinContentInMiligram, Double carbonHydrateContentInMiligram,
 			Double fatContentInMiligram, Meal nextValue) {
 		next = nextValue;
 		this.name = name;
 		this.proteinContentInMiligram = proteinContentInMiligram;
 		this.carbonHydrateContentInMiligram = carbonHydrateContentInMiligram;
 		this.fatContentInMiligram = fatContentInMiligram;
-	}
+	}*/
 
 	// these methods should be self-explanatory
 
@@ -45,27 +37,27 @@ public class Meal {
 		this.name = name;
 	}
 
-	public Double getProteinContentInMiligram() {
+	public double getProteinContentInMiligram() {
 		return proteinContentInMiligram;
 	}
 
-	public void setProteinContentInMiligram(Double proteinContentInMiligram) {
+	public void setProteinContentInMiligram(double proteinContentInMiligram) {
 		this.proteinContentInMiligram = proteinContentInMiligram;
 	}
 
-	public Double getCarbonHydrateContentInMiligram() {
+	public double getCarbonHydrateContentInMiligram() {
 		return carbonHydrateContentInMiligram;
 	}
 
-	public void setCarbonHydrateContentInMiligram(Double carbonHydrateContentInMiligram) {
+	public void setCarbonHydrateContentInMiligram(double carbonHydrateContentInMiligram) {
 		this.carbonHydrateContentInMiligram = carbonHydrateContentInMiligram;
 	}
 
-	public Double getFatContentInMiligram() {
+	public double getFatContentInMiligram() {
 		return fatContentInMiligram;
 	}
 
-	public void setFatContentInMiligram(Double fatContentInMiligram) {
+	public void setFatContentInMiligram(double fatContentInMiligram) {
 		this.fatContentInMiligram = fatContentInMiligram;
 	}
 
@@ -86,5 +78,17 @@ public class Meal {
 				", fatContentInMiligram=" + fatContentInMiligram +
 				", next=" + next +
 				'}';
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null)
+			return false;
+		if (obj == this)
+			return true;
+		return (this.getName() == ((Meal)obj).getName() &&
+				this.getProteinContentInMiligram() == ((Meal)obj).getProteinContentInMiligram() &&
+				this.getCarbonHydrateContentInMiligram() == ((Meal)obj).getCarbonHydrateContentInMiligram() &&
+				this.getFatContentInMiligram() == ((Meal)obj).getFatContentInMiligram());
 	}
 }

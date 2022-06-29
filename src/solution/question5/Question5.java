@@ -1,4 +1,4 @@
-package solution;
+package solution.question5;
 
 import java.awt.*;
 import java.io.BufferedReader;

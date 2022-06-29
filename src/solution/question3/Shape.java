@@ -1,2 +1,6 @@
-package solution.question3;public class Shape {
+package solution.question3;
+
+public interface Shape {
+	double area();
+	double perimeter();
 }

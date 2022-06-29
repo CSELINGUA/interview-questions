@@ -1,7 +1,8 @@
-package solution;
+package solution.question5;
 
 import java.util.ArrayList;
 
+import solution.question5.Node;
 
 public class Tree<T> {
 

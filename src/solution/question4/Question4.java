@@ -1,15 +1,12 @@
-package solution;
+package solution.question4;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.math.BigInteger;
 
-
 public class Question4 {
-
 	static int number;
 	public static void main(String []args){
-
 		System.out.println("Enter a number between 22 and 100 to get the factorial");
 
 		try
