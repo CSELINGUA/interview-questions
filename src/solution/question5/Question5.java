@@ -11,7 +11,7 @@ public class Question5 {
 
 	public static final String CLIENT_ONE_FILE = "client-request-1.txt";
 	public static final String CLIENT_TWO_FILE = "client-request-2.txt";
-	public static final String CLIENT_THREE_FILE = "client-request-2.txt";
+	public static final String CLIENT_THREE_FILE = "client-request-3.txt";
 	public static final String BANK_FILE = "teradata-world-setup.txt";
 	public static final String PATH = "/Users/cselingua/Documents/Programs/JAVA/files/";
 

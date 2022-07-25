@@ -11,7 +11,7 @@ public class LinkedList {
 	// appends the specified element to the end of this list.
 	public void add(Meal meal) {
 
-		// Initialize solution.question5.Node only incase of 1st element
+		// Initialize solution.question5.Node only in case of 1st element
 		if (head == null) {
 			head = new Meal(meal.getName(), meal.getProteinContentInMiligram(), meal.getCarbonHydrateContentInMiligram(),
 					meal.getFatContentInMiligram());
@@ -112,7 +112,7 @@ public class LinkedList {
 	public Meal remove(Object key) throws Exception {
 		if(key  instanceof Integer) {
 			Meal linkPrev;
-			int index = ((Integer) key).intValue();
+			int index = (Integer) key;
 			if (index < 1 || index > size())
 				return null;
 			Meal linkCurrent = head;
